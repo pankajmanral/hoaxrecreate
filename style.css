@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+}
+.icon h1{
+    font-size: 3rem;
+}
+.icon ul li{
+    display: inline-block;
+    padding: 10px;
+}
+.icon ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    cursor: pointer;
+}
+.banner{    
+    background: url("./pexels-mitchell-luo-3694708.jpg");
+    height: 95vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero{
+    position: relative;
+    max-width: 800px;
+    top: 200px;
+    left: 20px;
+    color: white;
+}
+.title{
+    font-size: 6rem;
+}
+.hero h2{
+    font-size: 4rem; 
+    font-weight: lighter;
+}
+.subTitle{
+    font-size: 4rem
+}
+span{
+    color: rgb(29, 29, 29);
+}
+.hire{
+    background-color: black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.5rem;
+    padding: 10px;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+.work{
+    margin-top: 30px;
+}
+.work h1{
+    font-size: 4rem;
+    margin-left: 20px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+button{
+    background-color: white;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.pictureWall{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 9px;
+    height: 80vh;
+    width: 80%;
+}
+.card1{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./1.jpg");
+}
+.card2{
+    grid-row: span 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./2.jpg");
+}
+.card3{
+    grid-column: span 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./3.jpg");
+}
+.card4{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./4.jpg");
+}
+.card5{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./5.jpg");
+}
+.card6{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./6.jpg");
+}
+
+@media (max-width: 990px){
+    .icon h1{
+        font-size: 2rem;
+    }
+    .icon ul li{
+        padding: 7px;
+    }
+    .icon ul li a{
+        font-size: 1rem;
+    }
+    .hero h2{
+        font-size: 2rem;
+    }
+    .subTitle{
+        font-size: 3rem;
+    }
+    .title{
+        font-size: 4rem;
+    }
+    .hire{
+        font-size: 1rem;
+    }
+    .pictureWall{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
+        height: 90vh;
+    }
+    .card2{
+        grid-row:span 1 ;
+    }
+    .card3{
+        grid-column: span 1;
+    }
+}
+@media (max-width:570px) {
+    .banner{
+        height: 70vh;
+    }
+    .hero{
+        top: 150px;
+    }
+    .icon h1{
+        font-size: 1.5rem;
+    }
+    .icon ul li{
+        padding: 1px;
+    }
+    .icon ul li a{
+        font-size: 0.7rem;
+    }
+    .hero h2{
+        font-size: 1.5rem;
+    }
+    .subTitle{
+        font-size: 2rem;
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+    .hire{
+        font-size: 0.8rem;
+    }
+    .work h1{
+        font-size: 2rem;
+    }
+    button{
+        font-size: 1rem;
+    }
+    .pictureWall{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+        height: 100vh;
+    }
+}
